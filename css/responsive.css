@@ -1,0 +1,525 @@
+@media (max-width: 1200px) {
+    .title {
+        padding: 80px;
+    }
+    .title h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        padding: 60px;
+    }
+    .title h1 {
+        font-size: 42px;
+    }
+
+    .single-table {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .title {
+        padding: 40px;
+         text-align: center !important;
+    }
+    .title h1 {
+        font-size: 36px;
+    }
+
+    .site-navbar {
+        width: 100vw;
+        left: 0;
+        right: 0;
+        background-color: #f9f9f9; /* or any other color you prefer */
+    }
+
+
+    .title p {
+        padding: 0 50px;
+    }
+
+    .single-table {
+        padding: 20px !important;
+        margin: 15px 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    .site-navbar {
+        width: 100vw;
+        left: 0;
+        right: 0;
+    }
+
+    .site-navbar .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .site-logo {
+        font-size: 14px !important;
+        width: 250px;
+    }
+
+    .site-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-menu > li {
+        display: block;
+    }
+
+    .site-menu > li > a > span {
+        padding: 5px 10px;
+    }
+
+    .site-navigation {
+        text-align: center;
+    }
+
+    .header-background {
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .title {
+        text-align: center;
+        padding: 20px;
+        bottom: 15px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        left: 0;
+        right: 0;   
+    }
+    
+    .title h1 {
+        font-size: 48px !important;
+    }
+    .title .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .mission-section .title, .contact-mission-section .title {
+        padding: 0 !important;
+    }
+    .mission-section h1, .contact-mission-section h1 {
+        font-size: 22px !important;
+    }
+
+    .title {
+        text-align: center !important;
+    }
+
+    .about-us-section {
+        padding: 20px;
+    }
+
+    .about-us-section .container {
+        padding: 20px;
+    }
+
+    .about-us-section h5 {
+        font-size: 18px;
+    }
+
+    .about-us-section h1 {
+        font-size: 24px;
+    }
+
+    .about-us-section p {
+        font-size: 16px;
+    }
+
+    .about-us-section .title {
+        margin-bottom: 15px !important;
+    }
+
+    .about-us-section .logo img {
+        max-width: 150px;
+        margin: 50px 100px !important
+    }
+
+    .partnerships-section {
+        padding: 20px;
+    }
+
+    .partnerships-section .container {
+        padding: 20px;
+    }
+
+    .partnerships-section h1 {
+        font-size: 24px;
+    }
+
+    .partnerships-section .single-table {
+        margin-bottom: 20px;
+    }
+
+    .services-section {
+        padding: 20px;
+    }
+
+    .services-section .container {
+        padding: 20px;
+    }
+
+    .services-section h1 {
+        font-size: 24px;
+    }
+
+    .services-section .single-table {
+        margin-bottom: 20px;
+    }
+
+    .services-description {
+        margin: 50px 0 !important; }
+
+    .project-focus-section {
+        padding: 20px;
+    }
+
+    .project-focus-section .container {
+        padding: 20px;
+    }
+
+    .project-focus-section h1 {
+        font-size: 24px;
+    }
+
+    .project-focus-section .single-table {
+        margin-bottom: 20px;
+    }
+
+    .about-us-page, .services-page,
+    .about-us-section,
+    .services-section, .project-focus-section,
+    .partnerships-page, .projects-title,
+    .projects-contents, .projects-page,
+    .mission-section, footer{
+        padding: 50px !important;
+
+        .title p, .projects-title p {
+            font-size: 18px !important;
+            margin-top: 15px !important;
+            padding: 0 !important;
+        }
+    }
+
+    .projects-page .single-table p {
+            margin-bottom: 0 !important;
+            font-size: 14px !important;
+        }
+
+
+    .core-values-page {
+        .single-item { margin: auto;}
+    }
+
+    .core-values {
+        padding: 0 !important;
+    }
+
+    .single-table {
+        padding: 15px !important;
+        margin: 10px 0 !important;
+        font-size: 0.9rem !important;
+
+        p {
+            margin-bottom: 15px !important;
+            font-size: 14px !important;}
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        left: 0;
+        right: 0;
+        max-width: 100%;
+    }
+    .header-title {     
+        margin: 0;
+        padding: 0;
+        border: 0;
+        left: 0;
+    right: 0;   }
+    .header-title h1 {
+        text-align: center;
+        font-size: 36px !important;
+    }
+
+    .mission-section .title, .contact-mission-section .title {
+        padding: 0 !important;
+    }
+
+    .mission-section h1, .contact-mission-section h1 {
+        font-size: 20px !important;
+    }
+
+    .site-logo {
+        font-size: 12px !important;
+        width: 200px;
+    }
+
+    .site-menu > li > a > span {
+        padding: 5px 5px;
+    }
+
+    .header-title .btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .about-us-section h5 {
+        font-size: 16px;
+    }
+
+    .about-us-section h1 {
+        font-size: 20px;
+    }
+
+    .about-us-section p {
+        font-size: 14px !important;
+    }
+
+    .about-us-logo {
+        max-width: 100px;
+        margin-right: 150px !important;
+        order: -1;
+    }
+
+    .about-us-section .logo img {
+        max-width: 120px;
+        margin: 60px !important;
+    }
+
+    .partnerships-section h1 {
+        font-size: 20px;
+    }
+
+    .services-section h1 {
+        font-size: 20px;
+    }
+
+
+    .project-focus-section h1 {
+        font-size: 20px;
+    }
+
+    .hr-line {
+        width: 12rem !important;
+    }
+
+    .about-us-page, .services-page,
+    .about-us-section,
+    .services-section, .project-focus-section,
+    .partnerships-page, 
+    .projects-contents, .projects-page,
+    .projects-title, .mission-section, .contact-mission-section, footer{
+        padding: 40px !important;
+
+        .title p {
+            font-size: 18px !important;
+            margin-top: 15px;
+            padding: 0 !important;
+        }
+    }
+
+    .core-values-page {
+        .single-item { margin: auto;}
+    }
+
+    .single-table {
+        width: auto;
+        font-size: 0.85rem !important;
+    }
+
+    .contact-form {margin-bottom: 30px;}
+}
+
+@media (max-width: 400px) {
+    .container {
+        left: 0;
+        right: 0;
+        max-width: 100%;
+    }
+    .hr-line {
+        width: 8rem !important;
+        margin: auto !important;
+    }
+    .header-title h1 {
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    .mission-section .title {
+        padding: 0 !important;
+    }
+    
+    .mission-section h1 {
+        font-size: 16px !important;
+    }
+
+    .site-logo {
+        font-size: 10px !important;
+        width: 150px;
+    }
+
+    .site-menu > li > a > span {
+        padding: 5px 0;
+    }
+
+    .header-title .btn {
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+    .about-us-section h5 {
+        font-size: 14px;
+    }
+
+    .about-us-section h1 {
+        font-size: 18px;
+    }
+
+    .about-us-section p {
+        font-size: 12px;
+    }
+
+    .about-us-logo {
+        max-width: 80px;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    .partnerships-section h1 {
+        font-size: 18px;
+    }
+
+    .services-section h1 {
+        font-size: 18px;
+    }
+
+    .project-focus-section h1 {
+        font-size: 18px;
+    }
+
+    .about-us-page, .services-page,
+    .about-us-section,
+    .services-section, .project-focus-section,
+    .partnerships-page, 
+    .projects-contents, .projects-page,
+    .projects-title, .mission-section, footer{
+        padding: 50px !important;
+
+        .title p {
+            font-size: 18px !important;
+            margin-top: 15px;
+            padding: 0 !important;
+        }
+    }
+
+    .core-values-page {
+        .single-item { margin: auto;}
+    }
+
+    .single-table {
+        width: fit-content;
+        font-size: 0.85rem !important; /* Smaller text for very small devices */
+    }
+}
+
+@media (max-width: 320px) {
+
+    .hr-line {
+        width: 8rem;
+        margin: auto;
+    }
+
+    .header-title h1 {
+        font-size: 24px !important;
+    }
+
+    .mission-section .title {
+        padding: 0 !important;
+    }
+    
+    .mission-section h1 {
+        font-size:12px !important;
+    }
+
+    .site-logo {
+        font-size: 8px !important;
+        width: 100px;
+    }
+
+    .site-menu > li > a > span {
+        padding: 5px 0;
+    }
+
+    .header-title .btn {
+        font-size: 8px;
+        padding: 10px 5px;
+    }
+
+    .about-us-section h5 {
+        font-size: 12px;
+    }
+
+    .about-us-section h1 {
+        font-size: 16px;
+    }
+
+    .about-us-section p {
+        font-size: 10px;
+    }
+
+    .about-us-logo {
+        max-width: 60px;
+    }
+
+    .partnerships-section h1 {
+        font-size: 16px;
+    }
+
+    .services-section h1 {
+        font-size: 16px;
+    }
+
+    .project-focus-section h1 {
+        font-size: 16px;
+    }
+
+    .about-us-page, .services-page,
+    .about-us-section,
+    .services-section, .project-focus-section,
+    .partnerships-page, 
+    .projects-contents, .projects-page,
+    .projects-title, .mission-section, footer{
+        padding: 40px !important;
+
+        .title p {
+            font-size: 18px;
+            margin-top: 15px;
+            padding: 0 !important;
+        }
+    }
+
+
+    .single-table {
+        width: fit-content;
+        font-size: 0.85rem !important; /* Smaller text for very small devices */
+    }
+}
