@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bolder;
 }
 
-p{font-family: 'allroundgothic-text', sans-serif;}
+p{font-family: "Montserrat", sans-serif;}
 
 section{
     display: block;
@@ -119,9 +119,9 @@ footer {
   }
 
   .footer-services a {
-    font-family: 'allroundgothic-text', sans-serif;
+
     margin-top: 15px;
-    color: #303a46;
+    color: #f29f05;
   }
 
   .footer-icons a {
@@ -139,6 +139,7 @@ footer {
   .footer-icons a:hover, 
   .footer-services a:hover {
     transform: scale(1.1);
+    font-weight: bold;
   }
 
   .bg-facebook {
@@ -210,7 +211,7 @@ footer .col-md-4, footer .col-lg-3, footer .col-xl-3 {
 }
 
 .mission-section-overlay {
-    background-color: rgba(78, 100, 9, 0.5); /* Semi-transparent overlay */
+    background-color: rgba(23, 69, 4, 0.5); /* Semi-transparent overlay */
     position: absolute;
     top: 0;
     left: 0;

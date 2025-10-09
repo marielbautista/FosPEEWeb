@@ -198,13 +198,14 @@
   }
 
   .content-title h1{
-    font-size: 4rem;
+    margin-bottom: 15px;
     font-weight: 800;
-    color: #f29f05;
+    color: #f9f9f9;
   }
 
   .content-title .btn{
-    background-color: #f29f05;
+    background-color: #f9f9f9;
+    color: #003c00;
       position: absolute;
       left:    0;
       bottom:   0;
@@ -212,6 +213,7 @@
 
   .content-title .btn:hover{
     background-color: #003c00;
+    color:#f9f9f9;
   }
 
   .single-start:hover{
@@ -319,6 +321,15 @@
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+    h1{
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+
+  p{
+    font-weight: lighter;
   }
 }
 
