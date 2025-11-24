@@ -49,6 +49,10 @@
         padding: 20px !important;
         margin: 15px 0 !important;
     }
+
+      .services-page {
+      padding: 30px 15px;
+  }
 }
 
 @media (max-width: 576px) {

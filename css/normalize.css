@@ -35,8 +35,8 @@ button {
     font-family: 'allroundgothic-text', sans-serif;
     background-color: #303a46;
     color: #f9f9f9;
-    border-radius: 10px;
-    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
     font-size: 1rem;
     transition: background-color 0.3s ease-in-out;
 }
@@ -90,7 +90,7 @@ div{
 
 
 .title {text-align: center;
-    margin-bottom: 80px;}
+}
 
 footer {
   padding: 50px 100px;
@@ -211,7 +211,7 @@ footer .col-md-4, footer .col-lg-3, footer .col-xl-3 {
 }
 
 .mission-section-overlay {
-    background-color: rgba(23, 69, 4, 0.5); /* Semi-transparent overlay */
+    background-color: rgba(21, 58, 4, 0.632);
     position: absolute;
     top: 0;
     left: 0;
