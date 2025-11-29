@@ -33,26 +33,9 @@
         font-size: 36px;
     }
 
-    .site-navbar {
-        width: 100vw;
-        left: 0;
-        right: 0;
-        background-color: #f9f9f9; /* or any other color you prefer */
+    .carousel-item .btn{
+      margin-bottom: 1.15rem;
     }
-
-
-    .title p {
-        padding: 0 50px;
-    }
-
-    .single-table {
-        padding: 20px !important;
-        margin: 15px 0 !important;
-    }
-
-      .services-page {
-      padding: 30px 15px;
-  }
 }
 
 @media (max-width: 576px) {
