@@ -127,7 +127,6 @@ footer img {
     color: #e7212f; 
     text-decoration: none;
     font-size: 1rem;
-    padding: 5px 0;
     display: inline-block;
     transition: color 0.3s ease;
 }
@@ -140,7 +139,7 @@ footer img {
 
 /* --- Social Icons --- */
 .footer-icons {
-    margin-top: 25px; 
+    margin-top: 20px; 
     font-size: 1.2rem;
     display: flex;
     gap: 10px;
@@ -185,6 +184,10 @@ footer img {
     font-size: 1.1rem;
     margin-right: 10px;
     color: inherit; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
 .bg-facebook{
