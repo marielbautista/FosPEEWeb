@@ -147,7 +147,35 @@
     transition: all 0.3s ease-in-out;
 }
 
-.start-page-main {
+@media (max-width: 1200px) {
+    .navbar-brand img {
+        height: 50px !important; 
+    }
+
+    .nav-item a { 
+        font-size: 14px !important; 
+    }
+
+    .navbar .container {
+        padding: 0 15px; 
+    }
+
+    .btn-contact {
+        padding: 8px 18px; 
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1080px) {
+    .navbar-nav {
+        margin-right: 10px !important; 
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand img {
+        height: 45px !important;
+    }
 }
 
 .header-background {
