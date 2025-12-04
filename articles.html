@@ -1,29 +1,28 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Meta Tags -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Articles</title>
-        <link rel="icon" href="img/FosPEEE Alternative logo_Standalone.png">
-        
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        
-        <!-- Custom CSS -->
-		    <link rel="stylesheet" href="css/icofont.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		    <link rel="stylesheet" href="css/normalize.css">
-		    <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/articles.css">
-		
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    </head>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<title>Home</title>
+			<link rel="icon" href="img/FosPEEE Alternative logo_Standalone.png">
+
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+			<link rel="stylesheet" href="css/icofont.css">
+			<link rel="stylesheet" href="css/normalize.css">
+			<link rel="stylesheet" href="css/style.css"> 
+			
+			<link rel="stylesheet" href="css/articles.css">
+
+			<link rel="stylesheet" href="css/responsive.css">
+
+
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		</head>
     <body>
 
         <!-- Navbar -->
@@ -92,7 +91,8 @@
                     <div class="filter-box">
                         <h3>Categories</h3>
                         <ul class="category-list">
-                            <li><a href="#Projects">Projects (3)</a></li>
+                            <li><a href="#" data-category="all" class="active-filter">All Articles (3)</a></li>
+                            <li><a href="#" data-category="projects">Projects (3)</a></li>
                             <li><a href="#">Partnerships (0)</a></li>
                             <li><a href="#">Events (0)</a></li>
                         </ul>
@@ -106,8 +106,13 @@
                 </aside>
 
                 <main class="articles-list-grid">
+
+                    <div id="no-articles-message" style="display: none; width: 100%; padding: 20px; text-align: center; color: #77a892; font-style: italic;">
+                        <h2>Nothing to see here yet!</h2>
+                        <p>Stay tuned! We're preparing new content for this category.</p>
+                    </div>
                     
-                    <a href="partners-for-forest.html" class="article-card" id="#Projects">
+                    <a href="partners-for-forest.html" class="article-card category-projects" id="#Projects">
                         <figure class="card-image-wrapper">
                             <img src="img/photos/IMG_20250520_084856.jpg" alt="A photo of the forest canopy." class="img-fluid">
                         </figure>
@@ -120,7 +125,7 @@ Partnership Building.</p>
                         </div>
                     </a>
                     
-                    <a href="bantay-ipo-project.html" class="article-card">
+                    <a href="bantay-ipo-project.html" class="article-card category-projects">
                         <figure class="card-image-wrapper">
                             <img src="img/photos/IMG_20250403_092929.jpg" alt="A photo of a partnership signing event." class="img-fluid">
                         </figure>
@@ -133,7 +138,7 @@ Watershed Protection System.</p>
                         </div>
                     </a>
 
-                    <a href="UMRBPL-impact-assessment.html" class="article-card">
+                    <a href="UMRBPL-impact-assessment.html" class="article-card category-projects">
                         <figure class="card-image-wrapper">
                             <img src="img/photos/IMG_20250403_131007.jpg" alt="A photo of a partnership signing event." class="img-fluid">
                         </figure>
@@ -147,7 +152,7 @@ Management Assessment.</p>
                         </div>
                     </a>
                     
-                    </main>
+                </main>
             </div>
 
             <div class="pagination-section">
@@ -166,7 +171,7 @@ Management Assessment.</p>
             <div class="container">
                 <h1 style="margin-bottom: 15px">Our Mission</h1>
 				<p>To foster sustainable environmental stewardship through community partnerships, reforestation initiatives, 
-					<br> and the preservation of biodiversity, ensuring a healthier planet for future generations.</p>
+					and the preservation of biodiversity, ensuring a healthier planet for future generations.</p>
             </div>
         </div>
 

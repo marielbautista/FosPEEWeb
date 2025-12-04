@@ -59,11 +59,20 @@
     padding: 5px 0;
     color: #555;
     text-decoration: none;
-    transition: color 0.2s;
+background-color: transparent;
+    border-left: 3px solid transparent; /* Placeholder for active state */
+    transition: all 0.2s ease;
+}
+
+.category-list a.active-filter {
+    color: #f29f05;
+    font-weight: bold;
+    background-color: #f0f8ff;
+    border-left: 3px solid #f29f05;
 }
 
 .category-list a:hover {
-    color: #ffadb3;
+    color: #ffcd6f;
     text-decoration: underline;
 }
 
@@ -92,7 +101,7 @@
 }
 
 .article-card {
-    display: flex;
+    display: none;
     flex-direction: column;
     text-decoration: none;
     color: inherit;
@@ -101,6 +110,10 @@
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.article-card.show {
+    display: block;
 }
 
 .article-card:hover {
