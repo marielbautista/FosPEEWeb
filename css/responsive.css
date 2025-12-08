@@ -38,19 +38,32 @@
     }
 
     #eventsCarousel .carousel-inner {
-        max-height: 480px;
-        overflow: hidden;
+        max-height: none !important;
+        overflow: visible !important;
     }
 
     #eventsCarousel .carousel-item {
-        height: 100%;
+        height: auto !important;
+        padding-bottom: 20px;
     }
 
     #eventsCarousel .carousel-control-prev,
     #eventsCarousel .carousel-control-next {
-        top: 50%;
-        transform: translateY(-50%);
-        width: 10%;
+        width: 30px; 
+        height: 30px;
+        top: 45%;
+    }
+
+    #eventsCarousel .carousel-control-prev-icon,
+    #eventsCarousel .carousel-control-next-icon {
+        transform: scale(0.6);
+    }
+
+    .content-photo img {
+        max-height: 220px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 6px;
     }
 }
 
@@ -152,7 +165,20 @@
         height: 250px;
     }
 
+    #eventsCarousel .carousel-item .row > div {
+        display: none;
+    }
 
+    #eventsCarousel .carousel-item .row > div:first-child {
+        display: block;
+        width: 100%;
+    }
+
+    .content-photo img {
+        max-height: 220px;
+        object-fit: cover;
+        width: 100%;
+    }
 
     .startpage-inner .carousel-indicators.left-indicators {
         bottom: 10px;

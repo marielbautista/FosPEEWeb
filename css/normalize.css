@@ -306,4 +306,26 @@ footer img {
     z-index: 1;
 }
 
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
     
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px; 
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 1;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
+}
