@@ -89,6 +89,8 @@ div{
 
 /* --- FOOTER STYLING --- */
 footer {
+    background-color: #f7f9fa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 60px 0;
     color: #001026;
 }
@@ -257,7 +259,7 @@ footer img {
     margin-top: 4px;
 }
 
-.mission-section {
+.mission-section, .vision-section {
     padding: 80px 100px;
     color: #f9f9f9;
     text-align: center;
@@ -283,21 +285,10 @@ footer img {
         padding: 30px;
         margin-bottom: 30px !important;
     }
-
-    .btn {
-        padding: 10px 20px;
-        background-color: #4E97E0;
-        color: #f9f9f9;
-    }
-
-    .btn:hover {
-        background-color: #001026;
-        color: #f9f9f9;
-    }
 }
 
-.mission-section-overlay {
-    background-color: rgba(21, 58, 4, 0.632);
+.mission-section-overlay, .vision-section-overlay {
+    background-color: rgba(33, 74, 44, 0.85);
     position: absolute;
     top: 0;
     left: 0;

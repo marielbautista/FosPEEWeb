@@ -190,3 +190,49 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Responsive Adjustments --- */
+
+/* For Tablets and Mobile */
+@media (max-width: 991px) {
+    .hover-slideshow {
+        aspect-ratio: 16 / 9; /* Wider, shorter aspect ratio for smaller screens */
+    }
+    
+    .cards-section .table-head h4 {
+        font-size: 0.8rem; /* Smaller badge on mobile */
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* For Mobile Phones specifically */
+@media (max-width: 576px) {
+    .hover-slideshow {
+        aspect-ratio: 1 / 1; /* Square images look better on narrow phones */
+    }
+
+    .cards-section .table-head p {
+        padding: 12px;
+        font-size: 0.8rem;
+        position: relative; /* Moves text BELOW the photo on very small phones */
+        background: #fff;
+        backdrop-filter: none;
+        border-top: 1px solid #eee;
+    }
+    
+    /* On mobile, we trigger the animation on "active" (tap) 
+       since hover doesn't exist */
+    .table-head:active .hover-slideshow img:not(:first-child) {
+        animation: creative-slideshow 6s infinite ease-in-out;
+    }
+}
+
+/* Fix for Touch Devices: 
+   If the user taps the card, the "hover" state can sometimes stick. 
+   This ensures the animation plays smoothly if the card is focused. */
+@media (hover: none) {
+    .table-head:active .hover-slideshow img:not(:first-child) {
+        animation: creative-slideshow 6s infinite ease-in-out;
+    }
+}
