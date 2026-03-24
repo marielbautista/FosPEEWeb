@@ -720,6 +720,19 @@ hr {
     100% { width: 100%; }
 }
 
+.mobile-nav-hint {
+    text-align: center;
+    padding: 20px;
+    color: #f76b1c;
+    font-weight: bold;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
 
 /* Mission Section */
 .mission-section, .vision-section {

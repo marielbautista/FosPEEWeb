@@ -1,238 +1,106 @@
+/* --- Desktop & General Fixes --- */
 @media (max-width: 1200px) {
-    .navbar-brand img {
-        height: 50px !important;
-    }
-
-    .nav-item a {
-        font-size: 14px !important;
-    }
-
-    .navbar .container {
-        padding: 0 15px;
-    }
-
-    .btn-contact {
-        padding: 8px 18px;
-        font-size: 14px;
-    }
+    .navbar-brand img { height: 50px !important; }
+    .nav-item a { font-size: 14px !important; }
+    .navbar .container { padding: 0 15px; }
+    .btn-contact { padding: 8px 18px; font-size: 14px; }
 }
 
 @media (min-width: 992px) and (max-width: 1080px) {
-    .navbar-nav {
-        margin-right: 10px !important;
-    }
+    .navbar-nav { margin-right: 10px !important; }
 }
 
+/* --- Tablets & Large Mobile (Landscape) --- */
 @media (max-width: 991px) {
-    .navbar-brand img {
-        height: 45px !important;
-    }
-
-    .image-wrapper {
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    .purpose-title {
-        font-size: 3rem;
-    }
-
-    #eventsCarousel .carousel-inner {
-        max-height: none !important;
-        overflow: visible !important;
-    }
-
-    #eventsCarousel .carousel-item {
-        height: auto !important;
-        padding-bottom: 20px;
-    }
-
-    #eventsCarousel .carousel-control-prev,
-    #eventsCarousel .carousel-control-next {
-        width: 30px; 
-        height: 30px;
-        top: 45%;
-    }
-
-    #eventsCarousel .carousel-control-prev-icon,
-    #eventsCarousel .carousel-control-next-icon {
-        transform: scale(0.6);
-    }
-
-    .content-photo img {
-        max-height: 220px;
-        object-fit: cover;
-        width: 100%;
-        border-radius: 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-background {
-        height: 90vh;
-        padding-top: 50px;
-    }
-
-    .header-with-breadcrumbs {
-        height: 40vh;
-        padding-top: 50px;
-    }
-
-    .start-page-main h1 {
-        font-size: 2.25rem;
-        margin-bottom: 25rem;
-    }
-
-    .carousel-item .btn {
-        margin-bottom: 1.15rem;
-    }
-
-    .page-title, 
-    .articles-page-header h1,
-    .section-title {
-        font-size: 2.25rem !important;
-    }
-
-    .start-page-main .caption {
-        padding-top: 15vh;
-    }
-
-    .purpose-section {
-        padding: 60px 0;
-    }
-
-    .purpose-title {
-        font-size: 2.2rem;
-    }
-
-    .primary-statement {
-        font-size: 1.15rem;
-    }
-
-    .mvp-block {
-        flex-direction: column;
-    }
-
-    .mvp-mission {
-        flex-direction: column;
-    }
-
-    .mvp-title-box, .mvp-content-box {
-        flex: 1 1 100%;
-        padding: 20px;
-    }
-
-    .mvp-title-box {
-        justify-content: flex-start;
-        text-align: left;
-    }
-
-    .mvp-heading {
-        font-size: 1.4rem;
-    }
-
-    .team-grid, .partner-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section-title, .page-title {
-        text-align: center;
-    }
-
-    .content-split {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 600px) {
-    .form-row {
-        flex-direction: column;
-    }
-
-    .form-actions {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .submit-button,
-    .reset-button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .startpage-inner img {
-        height: 250px;
-    }
-
-    #eventsCarousel .carousel-item .row > div {
-        display: none;
-    }
-
-    #eventsCarousel .carousel-item .row > div:first-child {
-        display: block;
-        width: 100%;
-    }
-
-    .content-photo img {
-        max-height: 220px;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .startpage-inner .carousel-indicators.left-indicators {
-        bottom: 10px;
-    }
-}
-
-@media (max-width: 500px) {
-    .team-grid, .partner-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* --- Responsive Adjustments --- */
-
-/* For Tablets and Mobile */
-@media (max-width: 991px) {
-    .hover-slideshow {
-        aspect-ratio: 16 / 9; /* Wider, shorter aspect ratio for smaller screens */
-    }
+    .navbar-brand img { height: 45px !important; }
+    .image-wrapper { height: auto; aspect-ratio: 16 / 9; }
+    .purpose-title { font-size: 2.8rem; } /* Slightly reduced for better fit */
     
+    /* Carousel Fixes */
+    #eventsCarousel .carousel-inner { max-height: none !important; overflow: visible !important; }
+    #eventsCarousel .carousel-item { height: auto !important; padding-bottom: 20px; }
+    #eventsCarousel .carousel-control-prev,
+    #eventsCarousel .carousel-control-next { width: 30px; height: 30px; top: 45%; }
+    #eventsCarousel .carousel-control-prev-icon,
+    #eventsCarousel .carousel-control-next-icon { transform: scale(0.6); }
+
+    /* Cards Section */
+    .cards-section { padding: 30px 15px; }
+    .hover-slideshow { aspect-ratio: 16 / 9; }
     .cards-section .table-head h4 {
-        font-size: 0.8rem; /* Smaller badge on mobile */
+        font-size: 0.8rem;
         top: 10px;
         left: 10px;
+        padding: 4px 10px;
     }
 }
 
-/* For Mobile Phones specifically */
-@media (max-width: 576px) {
-    .hover-slideshow {
-        aspect-ratio: 1 / 1; /* Square images look better on narrow phones */
-    }
+/* --- Mobile Phones (Portrait & Small Tablet) --- */
+@media (max-width: 768px) {
+    .header-background { height: auto; min-height: 80vh; padding-top: 60px; }
+    .header-with-breadcrumbs { height: 40vh; padding-top: 50px; }
+    
+    .start-page-main h1 { font-size: 2rem; margin-bottom: 2rem; }
+    .page-title, .articles-page-header h1, .section-title { font-size: 2rem !important; text-align: center; }
+    
+    /* Layout shifts */
+    .mvp-block, .mvp-mission, .content-split { flex-direction: column; }
+    .mvp-title-box, .mvp-content-box { flex: 1 1 100%; padding: 20px; text-align: left; }
+    
+    /* Grid adjustments */
+    .team-grid, .partner-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
 
+    /* Snap Scroll for Cards - Applied only to horizontal containers */
+    .row.cards-snap-slider {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding-bottom: 20px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .row.cards-snap-slider .col-12 {
+        flex: 0 0 85%; 
+        scroll-snap-align: center;
+    }
+    .row.cards-snap-slider::-webkit-scrollbar { display: none; }
+
+    /* Card Interaction */
+    .cards-section .table-head:hover { transform: none; }
     .cards-section .table-head p {
-        padding: 12px;
-        font-size: 0.8rem;
-        position: relative; /* Moves text BELOW the photo on very small phones */
+        position: relative;
+        transform: none !important;
+        opacity: 1 !important;
         background: #fff;
-        backdrop-filter: none;
+        padding: 15px;
+        font-size: 0.85rem;
         border-top: 1px solid #eee;
     }
-    
-    /* On mobile, we trigger the animation on "active" (tap) 
-       since hover doesn't exist */
-    .table-head:active .hover-slideshow img:not(:first-child) {
-        animation: creative-slideshow 6s infinite ease-in-out;
-    }
 }
 
-/* Fix for Touch Devices: 
-   If the user taps the card, the "hover" state can sometimes stick. 
-   This ensures the animation plays smoothly if the card is focused. */
+/* --- Small Mobile Fixes --- */
+@media (max-width: 576px) {
+    .startpage-inner img { height: 250px; }
+    .purpose-title { font-size: 1.8rem; }
+    
+    /* Simple Carousel Logic: Show 1 item only */
+    #eventsCarousel .carousel-item .row > div:not(:first-child) { display: none; }
+    #eventsCarousel .carousel-item .row > div:first-child { display: block; width: 100%; }
+
+    .hover-slideshow { aspect-ratio: 1 / 1; } /* Square for phones */
+}
+
+/* --- Touch Support (Hover Simulation) --- */
 @media (hover: none) {
     .table-head:active .hover-slideshow img:not(:first-child) {
-        animation: creative-slideshow 6s infinite ease-in-out;
+        animation: creative-slideshow 6s infinite ease-in-out !important;
+    }
+    .table-head:active .hover-slideshow img:first-child {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .table-head:active .content-photo::after {
+        animation: progress-bar 6s linear infinite !important;
     }
 }
