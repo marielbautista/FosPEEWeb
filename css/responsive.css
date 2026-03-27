@@ -8,6 +8,10 @@
 
 @media (min-width: 992px) and (max-width: 1080px) {
     .navbar-nav { margin-right: 10px !important; }
+    .transition-arrow svg {
+        width: 30px;
+        transform: rotate(0deg);
+    }
 }
 
 /* --- Tablets & Large Mobile (Landscape) --- */
@@ -23,6 +27,7 @@
     #eventsCarousel .carousel-control-next { width: 30px; height: 30px; top: 45%; }
     #eventsCarousel .carousel-control-prev-icon,
     #eventsCarousel .carousel-control-next-icon { transform: scale(0.6); }
+    .carousel-item .btn { margin-bottom: 8px;}
 
     /* Cards Section */
     .cards-section { padding: 30px 15px; }
@@ -32,6 +37,14 @@
         top: 10px;
         left: 10px;
         padding: 4px 10px;
+    }
+
+    .transition-arrow {
+        transform: rotate(90deg);
+        margin: -10px 0 10px 0; /* Tightens space between stacked cards */
+    }
+    .transition-arrow svg {
+        width: 25px;
     }
 }
 
@@ -43,14 +56,11 @@
     .start-page-main h1 { font-size: 2rem; margin-bottom: 2rem; }
     .page-title, .articles-page-header h1, .section-title { font-size: 2rem !important; text-align: center; }
     
-    /* Layout shifts */
     .mvp-block, .mvp-mission, .content-split { flex-direction: column; }
     .mvp-title-box, .mvp-content-box { flex: 1 1 100%; padding: 20px; text-align: left; }
     
-    /* Grid adjustments */
     .team-grid, .partner-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
 
-    /* Snap Scroll for Cards - Applied only to horizontal containers */
     .row.cards-snap-slider {
         display: flex;
         flex-wrap: nowrap;
@@ -66,7 +76,6 @@
     }
     .row.cards-snap-slider::-webkit-scrollbar { display: none; }
 
-    /* Card Interaction */
     .cards-section .table-head:hover { transform: none; }
     .cards-section .table-head p {
         position: relative;
@@ -77,6 +86,9 @@
         font-size: 0.85rem;
         border-top: 1px solid #eee;
     }
+
+    .partner-name { font-size: 0.8rem; }
+    .partner-initials { font-size: 1.2rem; }
 }
 
 /* --- Small Mobile Fixes --- */
@@ -84,9 +96,17 @@
     .startpage-inner img { height: 250px; }
     .purpose-title { font-size: 1.8rem; }
     
-    /* Simple Carousel Logic: Show 1 item only */
     #eventsCarousel .carousel-item .row > div:not(:first-child) { display: none; }
     #eventsCarousel .carousel-item .row > div:first-child { display: block; width: 100%; }
+
+    .image-wrapper {
+        padding: 1rem;
+        min-height: auto; 
+    }
+    
+    .image-wrapper:hover img {
+        transform: none;
+    }
 
     .hover-slideshow { aspect-ratio: 1 / 1; } /* Square for phones */
 }

@@ -472,16 +472,28 @@ hr {
 .who-we-are-content h6 { color: #f29f05;}
 
 .image-wrapper {
+    position: relative;
     overflow: hidden;
     border-radius: 10px;
-    height: 400px;
+    height: auto; 
+    min-height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem; 
+    transition: padding 0.3s ease;
 }
 
 .image-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; 
+    display: block;
     transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
 }
 
 /* Mission & Vision Boxes */
@@ -526,6 +538,82 @@ hr {
 
 .vision-border {
     border-color: #0000FF !important;
+}
+
+/* Logos Section */
+.logos-section {
+    padding: 100px 50px;
+    margin-bottom: -2rem;
+    position: relative;
+}
+
+.logos-section .title {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.logos-section .single-item {
+    position: relative;
+    z-index: 1;
+    height: 20rem;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    box-shadow: #00000028 0 4px 8px 0, rgba(0, 0, 0, 0.014) 0 6px 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffcd6f;
+    margin-top: 35px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-section .logos-img {
+    max-width: 80%; /* Don't let logo take full width of card */
+    display: block;
+    margin: 0 auto;
+}
+
+.logos-section .single-item:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.logos-section h6 {
+    color: #f76b1c;
+}
+
+.logos-section .icon {
+    font-size: 5rem;
+    color: #3d211d;
+    margin-bottom: 15px;
+}
+
+.logos-section span {
+    color: rgba(232, 232, 232, 0.31);
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.transition-arrow-container {
+    padding: 0;
+    margin-top: 15px;
+}
+
+.transition-arrow {
+    width: 50px;
+    height: 50px;
+    color: #f76b1c;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 2;
+    transition: all 0.3s ease;
 }
 
 /* Purpose Section */
@@ -925,6 +1013,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
     min-height: 200px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }

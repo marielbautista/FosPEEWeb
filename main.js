@@ -228,3 +228,62 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', onResize);
   }
 })();
+
+// Gallery Strip
+// 1. Grab all elements
+const modal = document.getElementById("myModal");
+const modalImg = document.getElementById("modalImg");
+const counter = document.getElementById("image-counter");
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
+
+// 2. UNIFIED ARRAY: This finds images in the strip AND your new 2-photo layout
+const allGalleryImages = Array.from(document.querySelectorAll('.photo-gallery-strip img, .clickable-img'));
+let currentIndex = 0;
+
+// 3. Unified Function to update the modal
+function updateModalImage(index) {
+    if (index >= 0 && index < allGalleryImages.length) {
+        currentIndex = index;
+        modalImg.src = allGalleryImages[currentIndex].src;
+        
+        // Update the counter: "1 of 55"
+        if (counter) {
+            counter.innerText = `${currentIndex + 1} of ${allGalleryImages.length}`;
+        }
+    }
+}
+
+// 4. Single Loop to attach clicks
+allGalleryImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        modal.style.display = "flex";
+        updateModalImage(index);
+    });
+});
+
+// 5. Navigation Logic (Next/Prev)
+nextBtn.onclick = (e) => {
+    e.stopPropagation();
+    let nextIndex = (currentIndex + 1) % allGalleryImages.length;
+    updateModalImage(nextIndex);
+};
+
+prevBtn.onclick = (e) => {
+    e.stopPropagation();
+    let prevIndex = (currentIndex - 1 + allGalleryImages.length) % allGalleryImages.length;
+    updateModalImage(prevIndex);
+};
+
+// 6. Close logic
+document.querySelector(".close-modal").onclick = () => modal.style.display = "none";
+modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+// 7. Keyboard support
+document.addEventListener('keydown', (e) => {
+    if (modal.style.display === "flex") {
+        if (e.key === "ArrowRight") nextBtn.click();
+        if (e.key === "ArrowLeft") prevBtn.click();
+        if (e.key === "Escape") modal.style.display = "none";
+    }
+});
