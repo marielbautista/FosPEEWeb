@@ -1,7 +1,7 @@
 /* --- Desktop & General Fixes --- */
 @media (max-width: 1200px) {
     .navbar-brand img { height: 50px !important; }
-    .nav-item a { font-size: 14px !important; }
+    .nav-item a, .has-sub-menu { font-size: 14px !important; }
     .navbar .container { padding: 0 15px; }
     .btn-contact { padding: 8px 18px; font-size: 14px; }
 }
@@ -108,7 +108,12 @@
         transform: none;
     }
 
-    .hover-slideshow { aspect-ratio: 1 / 1; } /* Square for phones */
+    .hover-slideshow { aspect-ratio: 1 / 1; }
+
+    .cards-section span {
+    font-size: 1.7rem;
+    color: #ff8c00;
+    }
 }
 
 /* --- Touch Support (Hover Simulation) --- */
