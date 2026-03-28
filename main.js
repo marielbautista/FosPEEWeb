@@ -238,8 +238,7 @@ const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
 
 // 2. UNIFIED ARRAY: This finds images in the strip AND your new 2-photo layout
-const allGalleryImages = Array.from(document.querySelectorAll('.photo-gallery-strip img, .clickable-img'));
-let currentIndex = 0;
+const allGalleryImages = Array.from(document.querySelectorAll('.article-body .clickable-img'));
 
 // 3. Unified Function to update the modal
 function updateModalImage(index) {

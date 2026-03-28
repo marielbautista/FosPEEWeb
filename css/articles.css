@@ -221,10 +221,10 @@ background-color: transparent;
 }
 
 .header-with-breadcrumbs {
-    height: 300px;
+    height: 450px;
     min-height: 200px;
     background-size: cover;
-    background-position: bottom;
+    background-position: 10% 75%;
 }
 
 .header-with-breadcrumbs .overlay {

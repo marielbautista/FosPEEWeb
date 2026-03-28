@@ -180,7 +180,7 @@ hr {
     border-color: transparent;
 }
 
-.navbar-nav .nav-link, .navbar-nav .has-sub-menu {
+.navbar-nav .nav-link {
     transition: color 0.3s ease;
     padding: 10px 0;
 }
@@ -196,7 +196,7 @@ hr {
 
 .nav-item {
     text-transform: uppercase;
-    margin: 0 1.5rem 0 0;
+    margin: 0 1rem 0 0;
     padding: 0;
     position: relative;
 }
@@ -244,6 +244,8 @@ hr {
     color: #242424 !important;
     padding: 0.5rem 1rem;
     display: block;
+    transition: color 0.3s ease;
+    padding: 10px 0;
 }
 
 .has-sub-menu .sub-menu-link:hover {

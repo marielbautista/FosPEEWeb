@@ -1,9 +1,9 @@
 /* --- Desktop & General Fixes --- */
 @media (max-width: 1200px) {
     .navbar-brand img { height: 50px !important; }
-    .nav-item a, .has-sub-menu { font-size: 14px !important; }
-    .navbar .container { padding: 0 15px; }
-    .btn-contact { padding: 8px 18px; font-size: 14px; }
+    .nav-item a, .has-sub-menu { font-size: 13px !important;}
+    .navbar .container { padding: 0 10px; }
+    .btn-contact { padding: 8px 18px; font-size: 13px; }
 }
 
 @media (min-width: 992px) and (max-width: 1080px) {
@@ -18,8 +18,8 @@
 @media (max-width: 991px) {
     .navbar-brand img { height: 45px !important; }
     .image-wrapper { height: auto; aspect-ratio: 16 / 9; }
-    .purpose-title { font-size: 2.8rem; } /* Slightly reduced for better fit */
-    
+    .purpose-title { font-size: 2.8rem; }
+
     /* Carousel Fixes */
     #eventsCarousel .carousel-inner { max-height: none !important; overflow: visible !important; }
     #eventsCarousel .carousel-item { height: auto !important; padding-bottom: 20px; }
@@ -95,6 +95,11 @@
 @media (max-width: 576px) {
     .startpage-inner img { height: 250px; }
     .purpose-title { font-size: 1.8rem; }
+    .header-with-breadcrumbs { height: 40vh; padding-top: 50px; }
+    .header-background { height: auto; min-height: 40vh; padding-top: 60px; 
+    background-position: -360px -165px;}
+    
+    .has-sub-menu { padding: 10px 0; }
     
     #eventsCarousel .carousel-item .row > div:not(:first-child) { display: none; }
     #eventsCarousel .carousel-item .row > div:first-child { display: block; width: 100%; }
