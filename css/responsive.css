@@ -2,9 +2,16 @@
 @media (max-width: 1200px) {
     .navbar-brand img { height: 50px !important; }
     .nav-item a, .has-sub-menu { font-size: 13px !important;}
-    .navbar .container { padding: 0 10px; }
+    .navbar .container { padding: 0 10px 0 25px; }
     .btn-contact { padding: 8px 18px; font-size: 13px; }
+
+    .footer-email {
+        white-space: normal;
+        word-break: break-all;
+        display: inline-block;
+    }
 }
+
 
 @media (min-width: 992px) and (max-width: 1080px) {
     .navbar-nav { margin-right: 10px !important; }
@@ -19,6 +26,23 @@
     .navbar-brand img { height: 45px !important; }
     .image-wrapper { height: auto; aspect-ratio: 16 / 9; }
     .purpose-title { font-size: 2.8rem; }
+
+    .has-sub-menu .sub-menu {
+        display: none;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    /* When the JS adds the .active class, show the menu */
+    .has-sub-menu.active > .sub-menu {
+        display: block;
+        opacity: 1;
+    }
+    
+    /* Optional: Rotate an arrow icon if you have one */
+    .has-sub-menu.active > a i {
+        transform: rotate(180deg);
+    }
 
     /* Carousel Fixes */
     #eventsCarousel .carousel-inner { max-height: none !important; overflow: visible !important; }
@@ -46,6 +70,9 @@
     .transition-arrow svg {
         width: 25px;
     }
+
+    .partner-name { font-size: 1rem; }
+    .partner-initials { font-size: 1.4rem; }
 }
 
 /* --- Mobile Phones (Portrait & Small Tablet) --- */
@@ -94,12 +121,12 @@
 /* --- Small Mobile Fixes --- */
 @media (max-width: 576px) {
     .startpage-inner img { height: 250px; }
+    .start-page-main .caption { bottom: 6rem; }
+    .header-background { height: auto; min-height: 65vh; padding-top: 60px; }
     .purpose-title { font-size: 1.8rem; }
     .header-with-breadcrumbs { height: 40vh; padding-top: 50px; }
-    .header-background { height: auto; min-height: 40vh; padding-top: 60px; 
-    background-position: -360px -165px;}
-    
-    .has-sub-menu { padding: 10px 0; }
+    .header-with-breadcrumbs{ height: auto; min-height: 40vh; padding-top: 60px; 
+    background-position: center;}
     
     #eventsCarousel .carousel-item .row > div:not(:first-child) { display: none; }
     #eventsCarousel .carousel-item .row > div:first-child { display: block; width: 100%; }
@@ -119,7 +146,30 @@
     font-size: 1.7rem;
     color: #ff8c00;
     }
+
+    .footer-email {
+        white-space: normal;    /* Allows the text to move to a second line */
+        word-break: break-all;  /* Forces the break if the email is very long */
+        display: inline-block;  /* Required for some browsers to calculate width correctly */
+        max-width: 100%;
+    }
 }
+
+/* --- Smaller Mobile Devices --- */
+@media (max-width: 380px) {
+    * {
+        box-sizing: border-box;
+        font-size: small ;
+    }
+    span, .icon, i, .article-pre-header{ font-size: inherit; }
+    .header-with-breadcrumbs { height: 30vh; padding-top: 50px; }
+    .header-with-breadcrumbs{ height: auto; min-height: 30vh; padding-top: 60px; 
+    background-position: center;}
+
+    .partner-name { font-size: 0.6rem; }
+    .partner-initials { font-size: .8rem; }
+}
+
 
 /* --- Touch Support (Hover Simulation) --- */
 @media (hover: none) {

@@ -358,8 +358,11 @@ background-color: transparent;
 .photo-gallery-strip {
     display: flex;
     gap: 15px;
+    scroll-snap-type: x mandatory;
     overflow-x: auto;
     padding-bottom: 15px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
 }
 
@@ -367,8 +370,13 @@ background-color: transparent;
     height: 8px;
 }
 
+.photo-gallery-strip::-webkit-scrollbar-track {
+    background: #ffadb3;
+    border-radius: 10px;
+}
+
 .photo-gallery-strip::-webkit-scrollbar-thumb {
-    background: #ccc;
+    background: #f76b1c;
     border-radius: 10px;
 }
 
@@ -392,6 +400,7 @@ background-color: transparent;
     object-fit: cover;
     border-radius: 8px;
 }
+
 
 .image-modal {
     display: none; 

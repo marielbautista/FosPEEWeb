@@ -260,6 +260,25 @@ footer img {
     margin-top: 4px;
 }
 
+.wrap-text {
+    word-break: break-all; 
+    
+    overflow-wrap: break-word; 
+    
+    display: inline-block;
+    max-width: 100%;
+}
+
+.footer-email {
+    white-space: nowrap;
+}
+
+
+.footer-email:hover {
+    color: #f76b1c;
+    text-decoration: underline;
+}
+
 .mission-section, .vision-section {
     padding: 80px 100px;
     color: #f9f9f9;

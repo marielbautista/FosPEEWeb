@@ -48,6 +48,33 @@ document.addEventListener('DOMContentLoaded', function() {
     handleScroll();
 });
 
+// Sub-menu
+const subMenuParents = document.querySelectorAll('.has-sub-menu > a');
+
+subMenuParents.forEach(parentLink => {
+    parentLink.addEventListener('click', function(e) {
+        // Only apply this logic on mobile/small screens
+        if (window.innerWidth < 992) {
+            e.preventDefault(); // Prevent the actual link from navigating
+            
+            const parentLi = this.parentElement;
+            const isOpen = parentLi.classList.contains('active');
+
+            // 1. Close all other open sub-menus (Optional: Accordion style)
+            document.querySelectorAll('.has-sub-menu').forEach(li => {
+                if (li !== parentLi) li.classList.remove('active');
+            });
+
+            // 2. Toggle the current one
+            if (isOpen) {
+                parentLi.classList.remove('active');
+            } else {
+                parentLi.classList.add('active');
+            }
+        }
+    });
+});
+
 
 //ARTICLES PAGE CATEGORIES SHOWING CARDS FUNCTION
 document.addEventListener('DOMContentLoaded', function() {
